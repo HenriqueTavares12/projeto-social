@@ -66,7 +66,7 @@ section#redes-sociais img:hover{
 
 
 /* Configuração para dispositivos de telas pequenas */
-@media screen and (orientation:landscape) {
+@media screen and (orientation:portrait) {
     section#telefone{
         position: absolute;
         top: 50%;
@@ -90,7 +90,7 @@ section#redes-sociais img:hover{
 
 
 /* Configuração para dispositivos de telas pequenas */
-@media screen and (orientation:portrait) {
+@media screen and(max-width:768px) and (orientation:landscape) {
     section#telefone{
         position: absolute;
         top: 50%;
