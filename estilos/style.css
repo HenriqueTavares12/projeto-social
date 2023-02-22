@@ -33,6 +33,7 @@ section#telefone{
     height: 627px;
     width: 311px;
     background:url('../imagens/frame-iphone.png') no-repeat;
+    background-size: contain;
 
 }
 
@@ -61,4 +62,52 @@ section#redes-sociais img:hover{
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.404);
     transition: transform .4s, border .2s;
+}
+
+
+/* Configuração para dispositivos de telas pequenas */
+@media screen and (orientation:landscape) {
+    section#telefone{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 627px;
+        width: 311px;
+        background:url('../imagens/frame-iphone.png') no-repeat;
+        background-size: contain;
+    
+    }
+
+    iframe#tela{
+        position: relative;
+        top: 80px;
+        left: 22px;
+        width: 267px;
+        height: 471px;
+    }
+}
+
+
+/* Configuração para dispositivos de telas pequenas */
+@media screen and (orientation:portrait) {
+    section#telefone{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 313px;
+        width: 155px;
+        background:url('../imagens/frame-iphone.png') no-repeat;
+        background-size: contain;
+    
+    }
+
+    iframe#tela{
+        position: relative;
+        top: 40px;
+        left: 10px;
+        width: 133px;
+        height: 235px;
+    }
 }
